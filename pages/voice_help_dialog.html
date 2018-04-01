@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Help</title>
+    <script src="../lib/utils.js"></script>
+    <script src="../lib/keyboard_utils.js"></script>
+    <script src="../lib/dom_utils.js"></script>
+    <script src="../lib/rect.js"></script>
+    <script src="../lib/handler_stack.js"></script>
+    <script src="../lib/settings.js"></script>
+    <script src="../lib/find_mode_history.js"></script>
+    <script src="../content_scripts/mode.js"></script>
+    <script src="../content_scripts/ui_component.js"></script>
+    <script src="../content_scripts/link_hints.js"></script>
+    <script src="../content_scripts/vomnibar.js"></script>
+    <script src="../content_scripts/scroller.js"></script>
+    <script src="../content_scripts/marks.js"></script>
+    <script src="../content_scripts/mode_insert.js"></script>
+    <script src="../content_scripts/mode_find.js"></script>
+    <script src="../content_scripts/mode_key_handler.js"></script>
+    <script src="../content_scripts/mode_visual.js"></script>
+    <script src="../content_scripts/hud.js"></script>
+    <script src="../content_scripts/mode_normal.js"></script>
+    <script src="../content_scripts/vimium_frontend.js"></script>
+    <link rel="stylesheet" type="text/css" href="../content_scripts/vimium.css" />
+
+    <script type="text/javascript" src="ui_component_server.js"></script>
+    <script type="text/javascript" src="help_dialog.js"></script>
+</head>
+
+<body>
+    <div id="vimiumHelpDialogContainer">
+        <div id="vimiumHelpDialog">
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <span id="vimiumTitle" class="vimiumReset">
+                                Help - Voice Enabled Browser Navigator
+                            </span>
+                        </td>
+                        <td class="vimiumHelpDialogTopButtons">
+                            <a class="vimiumReset closeButton" href="#">&times;</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="vimiumReset vimiumDivider"></div>
+            <table class="vimiumReset">
+                <thead class="vimiumReset">
+                    <tr class="vimiumReset">
+                        <td class="vimiumReset"></td>
+                        <td class="vimiumReset"></td>
+                        <td class="vimiumReset vimiumHelpSectionTitle">Navigation</td>
+                    </tr>
+                </thead>
+            </table>
+            <p>Moving around page: Say a direction such as
+                <strong>Up</strong>,
+                <strong>Down</strong>,
+                <strong>Left</strong> or
+                <strong>Right</strong>.
+            </p>
+            <p> Clicking links: Say
+                <strong>Links</strong> to toggle on all the possible link navigation on the current screen. Then say
+                <strong>Go To [LETTER]</strong>
+                to click the link.
+            </p>
+            <p>Go back:
+                <strong> Go Back</strong>.
+            </p>
+            <p>Go forward:
+                <strong> Go Forward</strong>.
+            </p>
+            <table class="vimiumReset">
+                <thead class="vimiumReset">
+                    <tr class="vimiumReset">
+                        <td class="vimiumReset"></td>
+                        <td class="vimiumReset"></td>
+                        <td class="vimiumReset vimiumHelpSectionTitle">Pro Tip</td>
+                    </tr>
+                </thead>
+            </table>
+            <p>Keep scrolling by specifying
+                <strong>keep</strong> in your command and
+                <strong>stop</strong> to stop.
+            </p>
+            <p>Control the amount of movement by specifying
+                <strong>a little</strong> or
+                <strong>a page</strong>.
+            </p>
+            <p>For recipes, you can say
+                <strong>Go To Ingredients</strong> to see the required ingredients and
+                <strong>Go To Instructions</strong> to see the cooking instructions.
+            </p>
+            <p>Close help page:
+                <strong> Close Help</strong>
+            </p>
+            <table class="vimiumReset">
+                <thead class="vimiumReset">
+                    <tr class="vimiumReset">
+                        <td class="vimiumReset"></td>
+                        <td class="vimiumReset"></td>
+                        <td class="vimiumReset vimiumHelpSectionTitle">Disable Voice Enabled Browser Navigator</td>
+                    </tr>
+                </thead>
+            </table>
+            <p>Click
+                <strong>q</strong> to disable/enable the Voice Enabled Browser Navigator.</p>
+        </div>
+    </div>
+</body>
+
+</html>

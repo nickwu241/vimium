@@ -317,7 +317,7 @@ root.HelpDialog ?=
 
   toggle: (request) ->
     DomUtils.documentComplete =>
-      @helpUI ?= new UIComponent "pages/help_dialog.html", "vimiumHelpDialogFrame", ->
+      @helpUI ?= new UIComponent "pages/voice_help_dialog.html", "vimiumHelpDialogFrame", ->
     if @helpUI? and @isShowing()
       @helpUI.hide()
     else if @helpUI?
